@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+document.write('<table border="1"cellspacing="0">');
+  document.write("<tr><th>Subjects</th>"+ "    "+ "<th> Total Marks </th>" + "   " +"<th>Obtained Marks</th>" + "      "+"<th>Percentage</th></tr><br>")
+    let subject1 = prompt("enter subject 1");
+    let subject2 = prompt("enter subject 2");
+    let subject3 = prompt("enter subject 3");
+
+    let mark1 = prompt("obtained marks 1");
+    let mark2 = prompt("obtained marks 2");
+    let mark3 = prompt("obtained marks 3");
+
+    total_1 = 100;
+    total_2 = 100;
+    total_3 = 100;
+    percent_1 = mark1/total_1*100;
+    percent_2 = mark2/total_2*100;
+    percent_3 = mark3/total_3*100;
+  let obtained_marks = mark1 +mark2 +mark3;
+ let  average= percent1 + percent3/2;
+
+document.write("<tr><td>" + subject1 + "</td>"+"    " +" <td>100</td>"+ "  "+"<td>"+ mark1   +"</td> <td>" + percent_1 %+"</td></tr><br>")
+document.write("<tr><td>" + subject2 + "</td>"+"    " +" <td>100</td> </td><td>"+ mark2   +"</td> <td>" +percent_2+"</td></tr><br>")
+document.write("<tr><td>" + subject3 + "</td>"+"    " +" <td>100</td>+  <td>" + mark3   +"</td> <td>" + percent_3 %+"</td></tr>")
+// document.write("<tr><td>Total</td>" +" <td>300</td>+  <td>" + obtained_marks   +"</td> <td>" +  average%+"</td></tr>")
+
+    </script>
+</body>
+</html>
